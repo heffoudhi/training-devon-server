@@ -17,4 +17,22 @@ public class AbstractEto extends EntityTo<Long> {
     super();
   }
 
+  /**
+   * @param comment
+   */
+  public void setComment(String comment) {
+
+    // TODO Auto-generated method stub
+
+  }
+
+  /**
+   * @return
+   */
+  public String getComment() {
+
+    // TODO Auto-generated method stub
+    return null;
+  }
+
 }

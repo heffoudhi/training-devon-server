@@ -32,6 +32,8 @@ public class SpecialEntity extends ApplicationPersistenceEntity implements Speci
 
   private static final long serialVersionUID = 1L;
 
+  private String comment;
+
   /**
    * Returns the name of this special.
    *
@@ -151,6 +153,22 @@ public class SpecialEntity extends ApplicationPersistenceEntity implements Speci
 
     this.activePeriod = (WeeklyPeriodEmbeddable) activePeriod;
 
+  }
+
+  /**
+   * @return comment
+   */
+  public String getComment() {
+
+    return this.comment;
+  }
+
+  /**
+   * @param comment new value of {@link #getcomment}.
+   */
+  public void setComment(String comment) {
+
+    this.comment = comment;
   }
 
 }

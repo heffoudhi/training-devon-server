@@ -20,6 +20,8 @@ public class SpecialEto extends AbstractEto implements Special {
 
   private Money specialPrice;
 
+  private String comment;
+
   /**
    * {@inheritDoc}
    */
@@ -142,4 +144,23 @@ public class SpecialEto extends AbstractEto implements Special {
     }
     return true;
   }
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public String getComment() {
+
+    return comment;
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public void setComment(String comment) {
+
+    this.comment = comment;
+  }
+
 }
